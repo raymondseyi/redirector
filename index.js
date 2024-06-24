@@ -21,7 +21,7 @@ mongoose
 
 // create link model
 const LinkSchema = mongoose.Schema({
-  link: { type: String, required: [true, "Link is compulsory"] },
+  link: { type: String, required: [true, "Link is compulsory"], trim:true },
   createdDate: { type: String, default: Date.now() },
   name: { type: String, default: "link" },
 });
