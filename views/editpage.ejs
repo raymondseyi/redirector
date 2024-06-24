@@ -10,7 +10,7 @@
     <div class="container-fluid">
        
         <div class="row">
-            <div class="col-6 mx-auto shadow-sm py-4 h-100">
+            <div class="col-md-6 mx-auto shadow-sm py-4 h-100">
                 <h1 class="text-center">Your new redirect url is <a href=<%=link%>>Link</a> </h1>
                 <% if (message) { %>
                     
@@ -18,7 +18,7 @@
                 <% } %>
               
                 <form action="/edit" method="POST">
-                    <input type="text" class="form-control w-100 my-2" name="link">
+                    <input type="text" class="form-control w-100 my-2" name="link" placeholder="Type in your link">
                     <button class="btn btn-success w-100">Edit Redirection Link</button>
                 </form>
             </div>
